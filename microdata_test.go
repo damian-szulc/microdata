@@ -6,6 +6,7 @@ package microdata
 import (
 	"bytes"
 	"encoding/json"
+	"github.com/bradleyjkemp/cupaloy"
 	"io"
 	"net/http"
 	"net/http/httptest"
@@ -302,6 +303,15 @@ func TestParseURL(t *testing.T) {
 	if result != expected {
 		t.Errorf("Result should have been \"%s\", but it was \"%s\"", expected, result)
 	}
+}
+
+func TestParseURLSnapshot(t *testing.T) {
+	data, err := ParseURL("https://www.idnes.cz/zlin/zpravy/smrtelna-nehoda-motorkar-srazil-zenu.A150719_165426_zlin-zpravy_kol")
+	if err != nil {
+		t.Error(err)
+	}
+
+	cupaloy.SnapshotT(t, data)
 }
 
 func TestNestedItems(t *testing.T) {

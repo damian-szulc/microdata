@@ -1,0 +1,136 @@
+(*microdata.Microdata)({
+  Items: ([]*microdata.Item) (len=2) {
+    (*microdata.Item)({
+      Types: ([]string) (len=1) {
+        (string) (len=30) "https://schema.org/NewsArticle"
+      },
+      Properties: (microdata.PropertyMap) (len=10) {
+        (string) (len=11) "articleBody": (microdata.ValueList) (len=1) {
+          (string) (len=1144) "\n                        \n                            \n                            \n                            \n                                 „Pětičlenná osádka osobního automobilu Škoda Octavia jela ve směru od obce Bílavsko na Bystřici pod Hostýnem. Sedmdesátiletá žena, která seděla v autě vzadu na levé straně, požádala řidiče, aby zastavil,“ uvedla mluvčí kroměřížské policie Simona Kyšnerová. Řidič zastavil při krajnici nedaleko Bystřice pod Hostýnem a starší žena vystoupila do vozovky. „Během několika vteřin tudy ve stejném směru projížděl šestadvacetiletý motocyklista se spolujezdkyní a ženu na silnici srazil. Sedmdesátiletá paní náraz nepřežila,“ dodala mluvčí. Motocyklista a jeho spolujezdkyně při střetu utrpěli zranění, se kterými je záchranáři převezli do nemocnice. Okolnosti zavinění prošetřuje policie.   Letos se je to první smrtelná nehoda na Kroměřížsku.           \n                            \n                            \n                            \n                            \n                        \n                    "
+        },
+        (string) (len=15) "associatedMedia": (microdata.ValueList) (len=1) {
+          (*microdata.Item)({
+            Types: ([]string) (len=1) {
+              (string) (len=29) "http://schema.org/ImageObject"
+            },
+            Properties: (microdata.PropertyMap) (len=3) {
+              (string) (len=6) "height": (microdata.ValueList) (len=1) {
+                (string) (len=3) "420"
+              },
+              (string) (len=3) "url": (microdata.ValueList) (len=1) {
+                (string) (len=59) "https://1gr.cz/fotky/idnes/15/072/cl5/KOL5cac94_nehoda1.JPG"
+              },
+              (string) (len=5) "width": (microdata.ValueList) (len=1) {
+                (string) (len=3) "560"
+              }
+            },
+            ID: (string) ""
+          })
+        },
+        (string) (len=6) "author": (microdata.ValueList) (len=1) {
+          (*microdata.Item)({
+            Types: ([]string) (len=1) {
+              (string) (len=24) "http://schema.org/Person"
+            },
+            Properties: (microdata.PropertyMap) (len=2) {
+              (string) (len=4) "name": (microdata.ValueList) (len=1) {
+                (string) (len=17) "Lucie Kolischová"
+              },
+              (string) (len=3) "url": (microdata.ValueList) (len=1) {
+                (string) (len=52) "https://www.idnes.cz/novinari/lucie-kolischova.N2161"
+              }
+            },
+            ID: (string) ""
+          })
+        },
+        (string) (len=12) "dateModified": (microdata.ValueList) (len=1) {
+          (string) (len=19) "2015-07-19T19:13CET"
+        },
+        (string) (len=13) "datePublished": (microdata.ValueList) (len=1) {
+          (string) (len=19) "2015-07-19T19:13CET"
+        },
+        (string) (len=11) "description": (microdata.ValueList) (len=1) {
+          (string) (len=282) "\n                                V neděli ráno krátce po deváté hodině se u Bystřice pod Hostýnem stala tragická dopravní nehoda. Starší žena tam vystoupila z auta, srazil ji však projíždějící motorkář. Seniorka na místě zemřela.\n                            "
+        },
+        (string) (len=8) "headline": (microdata.ValueList) (len=1) {
+          (string) (len=73) "Seniorka vystoupila na kraji silnice, srážku s motorkářem nepřežila"
+        },
+        (string) (len=5) "image": (microdata.ValueList) (len=1) {
+          (*microdata.Item)({
+            Types: ([]string) (len=1) {
+              (string) (len=29) "http://schema.org/ImageObject"
+            },
+            Properties: (microdata.PropertyMap) (len=3) {
+              (string) (len=6) "height": (microdata.ValueList) (len=1) {
+                (string) (len=3) "420"
+              },
+              (string) (len=3) "url": (microdata.ValueList) (len=1) {
+                (string) (len=59) "https://1gr.cz/fotky/idnes/15/072/cl5/KOL5cac94_nehoda1.JPG"
+              },
+              (string) (len=5) "width": (microdata.ValueList) (len=1) {
+                (string) (len=3) "560"
+              }
+            },
+            ID: (string) ""
+          })
+        },
+        (string) (len=4) "name": (microdata.ValueList) (len=1) {
+          (string) (len=73) "Seniorka vystoupila na kraji silnice, srážku s motorkářem nepřežila"
+        },
+        (string) (len=9) "publisher": (microdata.ValueList) (len=1) {
+          (*microdata.Item)({
+            Types: ([]string) (len=1) {
+              (string) (len=31) "https://schema.org/Organization"
+            },
+            Properties: (microdata.PropertyMap) (len=4) {
+              (string) (len=4) "logo": (microdata.ValueList) (len=1) {
+                (*microdata.Item)({
+                  Types: ([]string) (len=1) {
+                    (string) (len=30) "https://schema.org/ImageObject"
+                  },
+                  Properties: (microdata.PropertyMap) (len=1) {
+                    (string) (len=3) "url": (microdata.ValueList) (len=1) {
+                      (string) (len=34) "https://1gr.cz/u/loga-n4/idnes.gif"
+                    }
+                  },
+                  ID: (string) ""
+                })
+              },
+              (string) (len=4) "name": (microdata.ValueList) (len=1) {
+                (string) (len=8) "iDNES.cz"
+              },
+              (string) (len=6) "sameAs": (microdata.ValueList) (len=1) {
+                (string) (len=21) "https://www.idnes.cz/"
+              },
+              (string) (len=3) "url": (microdata.ValueList) (len=1) {
+                (string) (len=20) "https://www.idnes.cz"
+              }
+            },
+            ID: (string) ""
+          })
+        }
+      },
+      ID: (string) ""
+    }),
+    (*microdata.Item)({
+      Types: ([]string) (len=1) {
+        (string) (len=23) "http://schema.org/Event"
+      },
+      Properties: (microdata.PropertyMap) (len=4) {
+        (string) (len=7) "endDate": (microdata.ValueList) (len=1) {
+          (string) (len=16) "2020-10-03T14:00"
+        },
+        (string) (len=4) "name": (microdata.ValueList) (len=1) {
+          (string) (len=10) "Volby 2020"
+        },
+        (string) (len=9) "startDate": (microdata.ValueList) (len=1) {
+          (string) (len=17) "2020-10-02-T10:00"
+        },
+        (string) (len=3) "url": (microdata.ValueList) (len=1) {
+          (string) (len=26) "https://www.idnes.cz/volby"
+        }
+      },
+      ID: (string) ""
+    })
+  }
+})
