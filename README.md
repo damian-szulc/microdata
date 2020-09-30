@@ -1,27 +1,24 @@
 Microdata
 =========
 
-Microdata is a package for the Go programming language to extract [HTML Microdata][0] from HTML5 documents. It depends on the [golang.org/x/net/html][1] HTML5-compliant parser.
-
 __HTML Microdata__ is a markup specification often used in combination with the [schema collection][3] to make it easier for search engines to identify and understand content on web pages. One of the most common schema is the rating you see when you google for something. Other schemas are persons, places, events, products, etc.
 
+Microdata is a package for the Go programming language to extract [HTML Microdata][0] from HTML5 documents. It depends on the [golang.org/x/net/html][1] HTML5-compliant parser.
 
 Installation
 ------------
 
-Single binaries for Linux, macOS and Windows are available on the [release page](https://github.com/namsral/microdata/releases).
-
-Or build from source:
+Build from source:
 
 ```sh
-$ go get -u github.com/namsral/microdata/cmd/microdata
+$ go get -u github.com/damian-szulc/microdata/cmd/microdata
 ```
 
 
 Usage
 -----
 
-Parse an URL:
+Parse from URL:
 
 ```sh
 $ microdata https://www.gog.com/game/...
@@ -45,7 +42,7 @@ $ microdata https://www.gog.com/game/...
 Parse HTML from the stdin:
 
 ```
-$ cat saved.html |microdata
+$ cat saved.html | microdata
 ```
 
 
@@ -65,12 +62,6 @@ Features
 - Parse from Stdin
 
 
-Contribution
-------------
-
-Bug reports and feature requests are welcome. Follow GiHub's guide to [using-pull-requests](https://help.github.com/articles/using-pull-requests/)
-
-
 Go Package
 ----------
 
@@ -81,7 +72,7 @@ import (
 	"encoding/json"
 	"os"
 
-	"github.com/namsral/microdata"
+	"github.com/damian-szulc/microdata"
 )
 
 func main() {
@@ -91,10 +82,3 @@ func main() {
 	os.Stdout.Write(b)
 }
 ```
-
-For documentation see [godoc.org/github.com/namsral/microdata][2].
-
-[0]: http://www.w3.org/TR/microdata
-[1]: https://golang.org/x/net/html
-[2]: http://godoc.org/github.com/namsral/microdata
-[3]: http://schema.org
