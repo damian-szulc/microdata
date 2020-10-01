@@ -1,9 +1,9 @@
 Microdata
 =========
 
-__HTML Microdata__ is a markup specification often used in combination with the [schema collection][3] to make it easier for search engines to identify and understand content on web pages. One of the most common schema is the rating you see when you google for something. Other schemas are persons, places, events, products, etc.
+Microdata is a package for the Go programming language to extract Microdata from HTML5 documents.
 
-Microdata is a package for the Go programming language to extract [HTML Microdata][0] from HTML5 documents. It depends on the [golang.org/x/net/html][1] HTML5-compliant parser.
+__HTML Microdata__ is a markup specification often used in combination with the [schema collection][3] to make it easier for search engines to identify and understand content on web pages. One of the most common schema is the rating you see when you google for something. Other schemas are persons, places, events, products, etc.
 
 Installation
 ------------
