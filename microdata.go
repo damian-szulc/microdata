@@ -167,12 +167,26 @@ func (p *parser) readAttr(item *Item, node *html.Node) {
 	if s, ok := getAttr("itemref", node); ok {
 		for _, itemref := range strings.Split(s, " ") {
 			if len(itemref) > 0 {
-				if n, ok := p.identifiedNodes[itemref]; ok {
+				if n, ok := p.identifiedNodes[itemref]; ok && !p.isParentNode(n, node) {
 					p.readItem(item, n, false)
 				}
 			}
 		}
 	}
+}
+
+// isParentNode checks whether node is nested in potential parent node
+func (p *parser) isParentNode(potentialParentNode, node *html.Node) bool {
+	var n = node
+	for n != nil {
+		if n == potentialParentNode {
+			return true
+		}
+
+		n = n.Parent
+	}
+
+	return false
 }
 
 // getValue returns the value of the property, value pair in the given node.
